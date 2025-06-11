@@ -1,0 +1,14 @@
+.Header-body {
+    display: flex;
+    background-color: white;
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 25px auto;
+    border-radius: 10px;
+}
+
+.logo2 {
+    margin-right: 40px;
+}

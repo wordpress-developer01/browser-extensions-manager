@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'NotoSans';
+    src: url('./fonts/static/NotoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('./fonts/static/NotoSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+:root {
+    /* === Layout Breakpoints === */
+    --breakpoint-mobile: 375px;
+    --breakpoint-desktop: 1440px;
+
+    /* === Neutral Colors === */
+    --neutral-900: hsl(227, 75%, 14%);
+    --neutral-800: hsl(226, 25%, 17%);
+    --neutral-700: hsl(225, 23%, 24%);
+    --neutral-600: hsl(226, 11%, 37%);
+    --neutral-300: hsl(0, 0%, 78%);
+    --neutral-200: hsl(217, 61%, 90%);
+    --neutral-100: hsl(0, 0%, 93%);
+    --neutral-0:   hsl(200, 60%, 99%);
+
+    --body-bg: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    --card-bg: var(--neutral-200);
+    --card-text: var(--neutral-900);
+
+    /* === Red Colors === */
+    --red-400: hsl(3, 86%, 64%);
+    --red-500: hsl(3, 71%, 56%);
+    --red-700: hsl(3, 77%, 44%);
+
+    /* === Gradients === */
+    --light-gradient: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+    --dark-gradient:  linear-gradient(180deg, #040918 0%, #091540 100%);
+
+    /* === Typography === */
+    --font-size-base: 16px;
+    --font-family-base: 'Noto Sans', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+
+body {
+    font-family: 'NotoSans', sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    background: var(--body-bg);
+    min-height: 100vh;
+}
+
+body.dark {
+    --neutral-900: hsl(0, 0%, 100%);
+    --neutral-800: hsl(226, 25%, 17%);
+    --neutral-700: hsl(225, 23%, 24%);
+    --neutral-600: hsl(226, 11%, 37%);
+    --neutral-300: hsl(0, 0%, 78%);
+    --neutral-200: hsl(217, 61%, 90%);
+    --neutral-100: hsl(0, 0%, 93%);
+    --neutral-0:   hsl(200, 60%, 99%);
+
+    --body-bg: linear-gradient(180deg, #040918 0%, #091540 100%);
+    --card-bg: var(--neutral-800);
+    --card-text: var(--neutral-0);
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--card-text);
+}
+
+.Header-body{
+    color: var(--neutral-900);
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    margin-top: 12px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Фон переключателя */
+.slider {
+    position: absolute;
+    cursor: default;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: hsl(226, 11%, 37%); /* серый (off) */
+    border-radius: 34px;
+    transition: 0.3s;
+}
+
+/* Круг */
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+/* Когда активен (вкл) */
+.switch input:checked + .slider {
+    background-color: hsl(3, 86%, 64%); /* красный (on) */
+}
+
+.switch input:checked + .slider::before {
+    transform: translateX(18px);
+}
+
+
+

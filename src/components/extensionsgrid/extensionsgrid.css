@@ -1,0 +1,27 @@
+.extensions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(30px, 400px));
+    gap: 16px;
+    padding: 10px;
+    line-height: 1.4;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.description {
+    max-width: 260px;
+    line-height: 1.4;
+    margin-top: 8px;
+    word-break: break-word;
+    hyphens: auto;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+

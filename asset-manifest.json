@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/browser-extensions-manager/static/css/main.4e4c18dd.css",
-    "main.js": "/browser-extensions-manager/static/js/main.70553148.js",
+    "main.js": "/browser-extensions-manager/static/js/main.05fe1ba1.js",
     "static/js/453.6e30a6ed.chunk.js": "/browser-extensions-manager/static/js/453.6e30a6ed.chunk.js",
     "static/media/NotoSans-Bold.ttf": "/browser-extensions-manager/static/media/NotoSans-Bold.27d083f7f844fb896ae7.ttf",
     "static/media/NotoSans-Regular.ttf": "/browser-extensions-manager/static/media/NotoSans-Regular.9ab05beb031b68562995.ttf",
     "index.html": "/browser-extensions-manager/index.html",
     "main.4e4c18dd.css.map": "/browser-extensions-manager/static/css/main.4e4c18dd.css.map",
-    "main.70553148.js.map": "/browser-extensions-manager/static/js/main.70553148.js.map",
+    "main.05fe1ba1.js.map": "/browser-extensions-manager/static/js/main.05fe1ba1.js.map",
     "453.6e30a6ed.chunk.js.map": "/browser-extensions-manager/static/js/453.6e30a6ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4e4c18dd.css",
-    "static/js/main.70553148.js"
+    "static/js/main.05fe1ba1.js"
   ]
 }
